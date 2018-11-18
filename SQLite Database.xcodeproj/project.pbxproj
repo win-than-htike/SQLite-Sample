@@ -12,9 +12,13 @@
 		995BBAD721A11EB100CC8ED6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995BBAD521A11EB100CC8ED6 /* Main.storyboard */; };
 		995BBAD921A11EB200CC8ED6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 995BBAD821A11EB200CC8ED6 /* Assets.xcassets */; };
 		995BBADC21A11EB200CC8ED6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995BBADA21A11EB200CC8ED6 /* LaunchScreen.storyboard */; };
+		99B85C4B21A11F8F00BE7390 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B85C4A21A11F8F00BE7390 /* DataManager.swift */; };
+		99B85C4D21A1216700BE7390 /* TodoVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B85C4C21A1216700BE7390 /* TodoVO.swift */; };
+		E6877C52312E89741943822B /* Pods_SQLite_Database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09EA458C382113D768CDA3C /* Pods_SQLite_Database.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A60C14ADABEA724C5229D08 /* Pods-SQLite Database.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQLite Database.release.xcconfig"; path = "Pods/Target Support Files/Pods-SQLite Database/Pods-SQLite Database.release.xcconfig"; sourceTree = "<group>"; };
 		995BBACE21A11EB100CC8ED6 /* SQLite Database.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SQLite Database.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		995BBAD121A11EB100CC8ED6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		995BBAD321A11EB100CC8ED6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		995BBAD821A11EB200CC8ED6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		995BBADB21A11EB200CC8ED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		995BBADD21A11EB200CC8ED6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99B85C4A21A11F8F00BE7390 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		99B85C4C21A1216700BE7390 /* TodoVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoVO.swift; sourceTree = "<group>"; };
+		B09EA458C382113D768CDA3C /* Pods_SQLite_Database.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SQLite_Database.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0FBEDB997738F2C81945F5 /* Pods-SQLite Database.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQLite Database.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SQLite Database/Pods-SQLite Database.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6877C52312E89741943822B /* Pods_SQLite_Database.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97714EDDCD5A1A4216EF5020 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B09EA458C382113D768CDA3C /* Pods_SQLite_Database.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		995BBAC521A11EB100CC8ED6 = {
 			isa = PBXGroup;
 			children = (
 				995BBAD021A11EB100CC8ED6 /* SQLite Database */,
 				995BBACF21A11EB100CC8ED6 /* Products */,
+				BDC87A1222765AE829D33C23 /* Pods */,
+				97714EDDCD5A1A4216EF5020 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +79,19 @@
 				995BBAD821A11EB200CC8ED6 /* Assets.xcassets */,
 				995BBADA21A11EB200CC8ED6 /* LaunchScreen.storyboard */,
 				995BBADD21A11EB200CC8ED6 /* Info.plist */,
+				99B85C4A21A11F8F00BE7390 /* DataManager.swift */,
+				99B85C4C21A1216700BE7390 /* TodoVO.swift */,
 			);
 			path = "SQLite Database";
+			sourceTree = "<group>";
+		};
+		BDC87A1222765AE829D33C23 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA0FBEDB997738F2C81945F5 /* Pods-SQLite Database.debug.xcconfig */,
+				6A60C14ADABEA724C5229D08 /* Pods-SQLite Database.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 995BBAE021A11EB200CC8ED6 /* Build configuration list for PBXNativeTarget "SQLite Database" */;
 			buildPhases = (
+				6D9F1D6C722EEB811CD8CB52 /* [CP] Check Pods Manifest.lock */,
 				995BBACA21A11EB100CC8ED6 /* Sources */,
 				995BBACB21A11EB100CC8ED6 /* Frameworks */,
 				995BBACC21A11EB100CC8ED6 /* Resources */,
+				14FD3F0DA174325237BB7B45 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +162,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14FD3F0DA174325237BB7B45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SQLite Database/Pods-SQLite Database-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SQLite Database/Pods-SQLite Database-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D9F1D6C722EEB811CD8CB52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SQLite Database-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		995BBACA21A11EB100CC8ED6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				995BBAD421A11EB100CC8ED6 /* ViewController.swift in Sources */,
+				99B85C4B21A11F8F00BE7390 /* DataManager.swift in Sources */,
+				99B85C4D21A1216700BE7390 /* TodoVO.swift in Sources */,
 				995BBAD221A11EB100CC8ED6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +353,7 @@
 		};
 		995BBAE121A11EB200CC8ED6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA0FBEDB997738F2C81945F5 /* Pods-SQLite Database.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +372,7 @@
 		};
 		995BBAE221A11EB200CC8ED6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A60C14ADABEA724C5229D08 /* Pods-SQLite Database.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
